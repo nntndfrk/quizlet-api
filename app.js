@@ -18,6 +18,7 @@ try {
   });
 
   const app = express();
+  app.use(cors());
   app.use(bodyParser.json());
 
   const { AppRouter } = require("./routes/router");
